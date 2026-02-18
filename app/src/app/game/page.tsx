@@ -272,10 +272,10 @@ function GameContent() {
           <Logo size="small" />
         </Card>
         <div className="flex-1" />
-        <Card className={`px-4 py-3 ${gameState.currentTeam === 'red' ? 'ring-2 ring-red-400' : ''}`} style={{ background: 'rgba(255, 77, 77, 0.1)' }}>
+        <Card className={`px-4 py-3 bg-red-500/10 ${gameState.currentTeam === 'red' ? 'ring-2 ring-red-400' : ''}`}>
           <span className="text-xl font-bold text-red-500">{gameState.scores.red}</span>
         </Card>
-        <Card className={`px-4 py-3 ${gameState.currentTeam === 'blue' ? 'ring-2 ring-blue-400' : ''}`} style={{ background: 'rgba(77, 159, 255, 0.1)' }}>
+        <Card className={`px-4 py-3 bg-blue-500/10 ${gameState.currentTeam === 'blue' ? 'ring-2 ring-blue-400' : ''}`}>
           <span className="text-xl font-bold text-blue-500">{gameState.scores.blue}</span>
         </Card>
       </div>
