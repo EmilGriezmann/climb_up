@@ -147,6 +147,43 @@ function GameContent() {
     }, 1500);
   }, [gameState, showResult]);
 
+  const handlePlayAgain = useCallback(() => {
+    setShowResult(false);
+    setLastSelectedItem(null);
+    setResultType(null);
+
+    if (isRandom) {
+      const randomResult = getRandomRound();
+      setCategory(randomResult.category);
+      setCurrentRound(randomResult.round);
+      const shuffledItems = [...randomResult.round.items].sort(() => Math.random() - 0.5);
+      setGameState({
+        currentTeam: 'red',
+        scores: { red: 0, blue: 0 },
+        remainingItems: shuffledItems,
+        selectedItem: null,
+        gameOver: false,
+        winner: null,
+        lastResult: null,
+      });
+    } else if (category) {
+      const round = getRandomRoundFromCategory(category.id);
+      if (round) {
+        setCurrentRound(round);
+        const shuffledItems = [...round.items].sort(() => Math.random() - 0.5);
+        setGameState({
+          currentTeam: 'red',
+          scores: { red: 0, blue: 0 },
+          remainingItems: shuffledItems,
+          selectedItem: null,
+          gameOver: false,
+          winner: null,
+          lastResult: null,
+        });
+      }
+    }
+  }, [isRandom, category]);
+
   const renderItem = (item: Item) => {
     const isSelected = lastSelectedItem?.id === item.id;
     let borderColor = '';
@@ -245,7 +282,7 @@ function GameContent() {
         {/* Play Again */}
         <Card
           as="button"
-          onClick={() => router.push('/')}
+          onClick={handlePlayAgain}
           className="w-full max-w-[320px] py-4 text-lg font-medium"
         >
           Play Again
