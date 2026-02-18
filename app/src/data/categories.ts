@@ -9,37 +9,37 @@ import { historyRounds } from './history';
 export const categories: Category[] = [
   {
     id: 'geography',
-    name: 'Erdkunde',
+    name: 'Geography',
     emoji: '🌍',
     rounds: geographyRounds,
   },
   {
     id: 'entertainment',
-    name: 'Unterhaltung',
+    name: 'Entertainment',
     emoji: '🎹',
     rounds: entertainmentRounds,
   },
   {
     id: 'animals',
-    name: 'Tiere',
+    name: 'Animals',
     emoji: '🐵',
     rounds: animalsRounds,
   },
   {
     id: 'food',
-    name: 'Essen',
+    name: 'Food',
     emoji: '🍕',
     rounds: foodRounds,
   },
   {
     id: 'sports',
-    name: 'Sport',
+    name: 'Sports',
     emoji: '⚽',
     rounds: sportsRounds,
   },
   {
     id: 'history',
-    name: 'Geschichte',
+    name: 'History',
     emoji: '📖',
     rounds: historyRounds,
   },

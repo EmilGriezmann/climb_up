@@ -1,10 +1,9 @@
 import { Round } from '@/types/game';
 
 export const entertainmentRounds: Round[] = [
-  // FILME
   {
     id: 'movies-boxoffice-1',
-    question: 'Which movie earned the least at box office?',
+    question: 'Which movie earned the most at the box office?',
     items: [
       { id: '1', name: 'Avatar', rank: 1 },
       { id: '2', name: 'Avengers: Endgame', rank: 2 },
@@ -21,25 +20,24 @@ export const entertainmentRounds: Round[] = [
   },
   {
     id: 'movies-oscars-1',
-    question: 'Which movie won the fewest Oscars?',
+    question: 'Which movie won the most Oscars?',
     items: [
       { id: '1', name: 'Ben-Hur', rank: 1 },
       { id: '2', name: 'Titanic', rank: 2 },
-      { id: '3', name: 'Herr der Ringe 3', rank: 3 },
+      { id: '3', name: 'Lord of the Rings 3', rank: 3 },
       { id: '4', name: 'West Side Story', rank: 4 },
       { id: '5', name: 'Gigi', rank: 5 },
       { id: '6', name: 'The Last Emperor', rank: 6 },
-      { id: '7', name: 'English Patient', rank: 7 },
-      { id: '8', name: 'Schindlers Liste', rank: 8 },
+      { id: '7', name: 'The English Patient', rank: 7 },
+      { id: '8', name: "Schindler's List", rank: 8 },
       { id: '9', name: 'Gandhi', rank: 9 },
-      { id: '10', name: 'Slumdog Millionär', rank: 10 },
+      { id: '10', name: 'Slumdog Millionaire', rank: 10 },
       { id: '11', name: 'Amadeus', rank: 11 },
     ],
   },
-  // MUSIK
   {
     id: 'music-spotify-1',
-    question: 'Which artist has the fewest Spotify listeners?',
+    question: 'Which artist has the most Spotify listeners?',
     items: [
       { id: '1', name: 'The Weeknd', rank: 1 },
       { id: '2', name: 'Taylor Swift', rank: 2 },
@@ -56,7 +54,7 @@ export const entertainmentRounds: Round[] = [
   },
   {
     id: 'music-sales-1',
-    question: 'Which artist sold the fewest records?',
+    question: 'Which artist sold the most records?',
     items: [
       { id: '1', name: 'The Beatles', rank: 1 },
       { id: '2', name: 'Elvis Presley', rank: 2 },
@@ -71,10 +69,9 @@ export const entertainmentRounds: Round[] = [
       { id: '11', name: 'Queen', rank: 11 },
     ],
   },
-  // SERIEN
   {
     id: 'series-imdb-1',
-    question: 'Which series has the lowest IMDb rating?',
+    question: 'Which series has the highest IMDb rating?',
     items: [
       { id: '1', name: 'Breaking Bad', rank: 1 },
       { id: '2', name: 'Planet Earth II', rank: 2 },
@@ -91,13 +88,13 @@ export const entertainmentRounds: Round[] = [
   },
   {
     id: 'series-episodes-1',
-    question: 'Which series has the fewest episodes?',
+    question: 'Which series has the most episodes?',
     items: [
-      { id: '1', name: 'Die Simpsons', rank: 1 },
+      { id: '1', name: 'The Simpsons', rank: 1 },
       { id: '2', name: 'Gunsmoke', rank: 2 },
       { id: '3', name: 'Law & Order', rank: 3 },
       { id: '4', name: 'NCIS', rank: 4 },
-      { id: '5', name: 'Grey\'s Anatomy', rank: 5 },
+      { id: '5', name: "Grey's Anatomy", rank: 5 },
       { id: '6', name: 'Criminal Minds', rank: 6 },
       { id: '7', name: 'ER', rank: 7 },
       { id: '8', name: 'Friends', rank: 8 },
@@ -106,10 +103,9 @@ export const entertainmentRounds: Round[] = [
       { id: '11', name: 'Breaking Bad', rank: 11 },
     ],
   },
-  // VIDEOSPIELE
   {
     id: 'games-sales-1',
-    question: 'Which video game sold the fewest copies?',
+    question: 'Which video game sold the most copies?',
     items: [
       { id: '1', name: 'Minecraft', rank: 1 },
       { id: '2', name: 'GTA V', rank: 2 },
@@ -120,16 +116,16 @@ export const entertainmentRounds: Round[] = [
       { id: '7', name: 'Super Mario Bros.', rank: 7 },
       { id: '8', name: 'Red Dead 2', rank: 8 },
       { id: '9', name: 'Overwatch', rank: 9 },
-      { id: '10', name: 'Pokémon Rot/Blau', rank: 10 },
+      { id: '10', name: 'Pokémon Red/Blue', rank: 10 },
       { id: '11', name: 'The Witcher 3', rank: 11 },
     ],
   },
   {
     id: 'games-metacritic-1',
-    question: 'Which game has the lowest Metacritic score?',
+    question: 'Which game has the highest Metacritic score?',
     items: [
       { id: '1', name: 'Zelda: OoT', rank: 1 },
-      { id: '2', name: 'Tony Hawk\'s Pro 2', rank: 2 },
+      { id: '2', name: "Tony Hawk's Pro 2", rank: 2 },
       { id: '3', name: 'GTA IV', rank: 3 },
       { id: '4', name: 'Soul Calibur', rank: 4 },
       { id: '5', name: 'Super Mario Galaxy', rank: 5 },
@@ -138,13 +134,12 @@ export const entertainmentRounds: Round[] = [
       { id: '8', name: 'Disco Elysium', rank: 8 },
       { id: '9', name: 'Zelda: BotW', rank: 9 },
       { id: '10', name: 'Elden Ring', rank: 10 },
-      { id: '11', name: 'Baldur\'s Gate 3', rank: 11 },
+      { id: '11', name: "Baldur's Gate 3", rank: 11 },
     ],
   },
-  // STREAMING / SOCIAL MEDIA
   {
     id: 'youtube-subs-1',
-    question: 'Which YouTube channel has the fewest subscribers?',
+    question: 'Which YouTube channel has the most subscribers?',
     items: [
       { id: '1', name: 'T-Series', rank: 1 },
       { id: '2', name: 'MrBeast', rank: 2 },
@@ -161,7 +156,7 @@ export const entertainmentRounds: Round[] = [
   },
   {
     id: 'instagram-followers-1',
-    question: 'Which account has the fewest Instagram followers?',
+    question: 'Which account has the most Instagram followers?',
     items: [
       { id: '1', name: 'Instagram', rank: 1 },
       { id: '2', name: 'Cristiano Ronaldo', rank: 2 },
