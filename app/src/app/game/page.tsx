@@ -264,11 +264,11 @@ function GameContent() {
         </Card>
 
         {/* Winner Card */}
-        <Card className={`w-full max-w-[320px] py-16 px-6 text-center bg-gradient-to-b ${winnerBg}`}>
-          <h2 className={`text-4xl font-bold ${winnerColor} animate-pulse`}>
+        <Card className={`w-full max-w-[320px] py-6 px-6 text-center bg-gradient-to-b ${winnerBg}`}>
+          <h2 className={`text-2xl font-bold ${winnerColor} animate-pulse`}>
             {gameState.winner === 'blue' ? 'Blue' : 'Red'} Wins!
           </h2>
-          <p className="text-3xl mt-4 font-bold">
+          <p className="text-xl mt-2 font-bold">
             <span className={gameState.winner === 'blue' ? 'text-blue-500' : 'text-gray-400'}>
               {gameState.scores.blue}
             </span>
