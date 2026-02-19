@@ -279,6 +279,21 @@ function GameContent() {
           </p>
         </Card>
 
+        {/* Top 10 Liste */}
+        <div className="w-full max-w-[320px] grid grid-cols-2 gap-2">
+          {[...currentRound.items]
+            .sort((a, b) => a.rank - b.rank)
+            .slice(0, 10)
+            .map((item) => (
+              <Card key={item.id} className="flex items-center gap-2 px-3 py-3">
+                <span className="text-base font-bold text-gray-300 shrink-0">
+                  {item.rank}.
+                </span>
+                <span className="text-sm font-medium truncate">{item.name}</span>
+              </Card>
+            ))}
+        </div>
+
         {/* Play Again */}
         <Card
           as="button"

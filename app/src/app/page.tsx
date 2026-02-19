@@ -21,7 +21,7 @@ export default function Home() {
           onClick={() => router.push('/categories')}
           className="w-full py-8 text-xl font-medium"
         >
-          Select Categorie
+          Select Category
         </Card>
 
         <Card
