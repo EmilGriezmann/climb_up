@@ -1,10 +1,10 @@
 import { Category, Round } from '@/types/game';
 import { geographyRounds } from './geography';
-import { entertainmentRounds } from './entertainment';
 import { animalsRounds } from './animals';
-import { foodRounds } from './food';
+import { cultureRounds } from './culture';
 import { sportsRounds } from './sports';
 import { historyRounds } from './history';
+import { businessRounds } from './business';
 
 export const categories: Category[] = [
   {
@@ -14,22 +14,16 @@ export const categories: Category[] = [
     rounds: geographyRounds,
   },
   {
-    id: 'entertainment',
-    name: 'Entertainment',
-    emoji: '🎹',
-    rounds: entertainmentRounds,
-  },
-  {
     id: 'animals',
     name: 'Animals',
     emoji: '🐵',
     rounds: animalsRounds,
   },
   {
-    id: 'food',
-    name: 'Food',
-    emoji: '🍕',
-    rounds: foodRounds,
+    id: 'culture',
+    name: 'Culture',
+    emoji: '🎭',
+    rounds: cultureRounds,
   },
   {
     id: 'sports',
@@ -42,6 +36,12 @@ export const categories: Category[] = [
     name: 'History',
     emoji: '📖',
     rounds: historyRounds,
+  },
+  {
+    id: 'business',
+    name: 'Business & Tech',
+    emoji: '📈',
+    rounds: businessRounds,
   },
 ];
 
